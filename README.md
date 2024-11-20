@@ -20,7 +20,7 @@ Simple (just write content from input to a file to a gist):
 
 ```yaml
 steps:
-  - uses: Tomiha/gist-write-action@v1
+  - uses: Tomiha/gist-write-action@v2
     with:
       token: ${{secrets.TOKEN_WITH_GIST_WRITE_SCOPE}}
       gist_id: 7bcddb642d16d291959642fc60feec9b
