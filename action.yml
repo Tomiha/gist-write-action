@@ -1,22 +1,29 @@
 name: "Gist Write Action"
-author: Sergey Sova
+author: Thomas Goussaert
 description: "The action to write content to a gist"
+
 inputs:
+  token:
+    required: true
+    description: "Access token with gist write scope"
   gist_id:
-    description: "Gist ID"
+    description: "ID of the gist to update"
     required: true
   file_name:
-    description: "Name of the file at the gist to write data at"
+    description: "Name of the file at the gist to write data to"
     required: true
   content:
-    description: "Content to write"
+    description: "Contents to write"
     required: true
+
+
 outputs:
   content:
     description: "updated gist content"
+
 runs:
-  using: "docker"
-  image: "Dockerfile"
+  using: "node20"
+  main: "dist/index.js"
 branding:
   color: blue
   icon: upload-cloud
