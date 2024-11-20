@@ -1,5 +1,14 @@
-# Gist-Write v1
+# Gist-Write v2
 Adapted version of [sergeysova/gist-write-action](https://github.com/sergeysova/gist-write-action)
+
+Changes:
+* Changed Action Type (Docker > Javascript)
+* Supports all runners now
+* Removed redudant files
+* Updated NPM packages to latest version
+* Updated index.js (support seperate token input)
+* Compiled & Minified to dist/index.js
+
 
 ## Usage
 
